@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player 2 Detected</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <!-- 01 -->
+    <section class="screen start">
+
+        <div class="tiny">MULTIPLAYER SYSTEM v2.0</div>
+
+        <h1>PLAYER 2<br>DETECTED</h1>
+
+        <div class="loader">
+            <span></span>
+        </div>
+
+        <p>SEARCHING FOR PLAYER 1...</p>
+
+        <a href="#found" class="button">
+            ENTER LOBBY
+        </a>
+
+    </section>
+
+
+    <!-- 02 -->
+    <section id="found" class="screen found">
+
+        <div class="online">
+            ● PLAYER 2 FOUND
+        </div>
+
+        <h2>CONNECTION<br>ESTABLISHED</h2>
+
+        <div class="terminal">
+
+            <p>PLAYER 1 ........ OFFLINE</p>
+            <p>PLAYER 2 ........ ONLINE</p>
+            <p>SERVER .......... STABLE</p>
+            <p>LOBBY ........... EMPTY</p>
+
+        </div>
+
+        <a href="#investigate" class="button">
+            INVESTIGATE
+        </a>
+
+    </section>
+
+
+    <!-- 03 -->
+    <section id="investigate" class="screen investigate">
+
+        <div class="tiny">SYSTEM INVESTIGATION</div>
+
+        <h2>WAIT...</h2>
+
+        <p class="message">
+            SOMETHING IS<br>
+            WRONG HERE.
+        </p>
+
+        <div class="warning">
+            PLAYER 2 IS ONLINE.
+            <br><br>
+            PLAYER 1 IS NOT.
+        </div>
+
+        <a href="#player1" class="button">
+            CHECK PLAYER 1
+        </a>
+
+    </section>
+
+
+    <!-- 04 -->
+    <section id="player1" class="screen player1">
+
+        <div class="tiny">PLAYER 1 PROFILE</div>
+
+        <h2>PLAYER 1<br>STATUS</h2>
+
+        <div class="checks">
+
+            <div>
+                <span>ONLINE</span>
+                <b>✕</b>
+            </div>
+
+            <div>
+                <span>AVAILABLE</span>
+                <b>✕</b>
+            </div>
+
+            <div>
+                <span>HAS TIME</span>
+                <b>✕</b>
+            </div>
+
+            <div>
+                <span>WANTED TO PLAY</span>
+                <b>✓</b>
+            </div>
+
+        </div>
+
+        <p class="message">
+            HMMMM...
+        </p>
+
+        <a href="#truth" class="button">
+            VIEW FULL REPORT
+        </a>
+
+    </section>
+
+
+    <!-- 05 -->
+    <section id="truth" class="screen truth">
+
+        <div class="error-code">
+            PLAYER 1 ERROR
+        </div>
+
+        <h2>THE PROBLEM<br>IS PLAYER 1.</h2>
+
+        <div class="terminal">
+
+            <p>AVAILABILITY ....... 0%</p>
+            <p>DISAPPEARING ........ 100%</p>
+            <p>RESPONDING .......... ???</p>
+            <p>PLAYING ............. SOMEDAY</p>
+
+        </div>
+
+        <p class="message">
+            SYSTEM HAS IDENTIFIED<br>
+            THE CULPRIT.
+        </p>
+
+        <a href="#repair" class="button">
+            FIX PLAYER 1
+        </a>
+
+    </section>
+
+
+    <!-- 06 -->
+    <section id="repair" class="screen repair">
+
+        <div class="tiny">PLAYER 1 LOCATING SYSTEM</div>
+
+        <h2>ATTEMPTING<br>TO FIND...</h2>
+
+        <div class="big-loader">
+            <span></span>
+        </div>
+
+        <p class="loading">
+            FINDING PLAYER 1...
+        </p>
+
+        <a href="#fixed" class="button">
+            CHECK STATUS
+        </a>
+
+    </section>
+
+
+    <!-- 07 -->
+    <section id="fixed" class="screen fixed">
+
+        <div class="success">
+            SEARCH HAS BEEN SUCCESFUL
+        </div>
+
+        <h2>PLAYER 1<br>IS BACK.</h2>
+
+        <p class="message">
+            AVAILABILITY: QUESTIONABLE<br>
+            INTENTIONS: GOOD<br>
+        </p>
+
+        <a href="#question" class="button">
+            CONTINUE
+        </a>
+
+    </section>
+
+
+    <!-- 08 -->
+    <section id="question" class="screen question">
+
+        <div class="tiny">FINAL SYSTEM REQUEST</div>
+
+        <h1>
+            PLAYER ONE IS ASKING<br>
+            CAN WE<br>
+            PLAY AGAIN?
+        </h1>
+
+        <p class="message">
+            PLAYER 1<br>
+            READY TO WAR.
+        </p>
+
+        <div class="choices">
+
+            <a href="#yes" class="yes">
+                YES
+            </a>
+
+            <a href="#no1" class="no">
+                NO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- 09 -->
+    <section id="no1" class="screen no-screen">
+
+        <div class="tiny">RESPONSE RECEIVED</div>
+
+        <h2>NO?</h2>
+
+        <p class="message">
+            UNDERSTANDABLE.
+            <br><br>
+            PLAYER 1 ACCEPTS FULL RESPONSIBILITY.
+        </p>
+
+        <div class="choices">
+
+            <a href="#yes" class="yes">
+                OKAY YES
+            </a>
+
+            <a href="#no2" class="no">
+                STILL NO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- 10 -->
+    <section id="no2" class="screen no-screen">
+
+        <div class="tiny">SECOND RESPONSE RECEIVED</div>
+
+        <h2>OUCH.</h2>
+
+        <p class="message">
+            PLAYER 1 HAS TAKEN<br>
+            EMOTIONAL DAMAGE.
+        </p>
+
+        <div class="damage">
+            -999 HP
+        </div>
+
+        <div class="choices">
+
+            <a href="#yes" class="yes">
+                FINE, YES
+            </a>
+
+            <a href="#no3" class="no">
+                NOPE
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- 11 -->
+    <section id="no3" class="screen final-no">
+
+        <div class="tiny">CRITICAL ERROR</div>
+
+        <h2>PLAYER 1<br>HAS BEEN REJECTED.</h2>
+
+        <p class="message">
+            SYSTEM WILL NOW<br>
+            PRETEND THIS NEVER HAPPENED.
+        </p>
+
+        <a href="#question" class="button">
+            TRY AGAIN
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         YES ATTEMPT #1
+    ================================== -->
+
+    <section id="yes" class="screen fake-error">
+
+        <div class="error-code">
+            ERROR 503
+        </div>
+
+        <h2>
+            CONNECTION<br>
+            FAILED.
+        </h2>
+
+        <p class="message">
+            PLAYER 1 IS SOMEHOW<br>
+            STILL NOT READY.
+        </p>
+
+        <div class="error-box">
+            ERROR: PLAYER 1 IS MISSING
+        </div>
+
+        <a href="#yes2" class="button">
+            RETRY CONNECTION
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         YES ATTEMPT #2
+    ================================== -->
+
+    <section id="yes2" class="screen fake-error">
+
+        <div class="error-code">
+            ERROR 502
+        </div>
+
+        <h2>
+            WAIT...
+        </h2>
+
+        <p class="message">
+            THAT DIDN'T WORK EITHER.
+        </p>
+
+        <div class="error-box">
+            UNEXPECTED ERROR DETECTED
+        </div>
+
+        <a href="#yes3" class="button">
+            RETRY AGAIN
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         YES ATTEMPT #3
+    ================================== -->
+
+    <section id="yes3" class="screen fake-error final-error">
+
+        <div class="error-code">
+            CRITICAL ERROR
+        </div>
+
+        <h2>
+            OH NO.
+        </h2>
+
+        <p class="message">
+            THE SYSTEM HAS COMPLETELY<br>
+            BROKEN.
+        </p>
+
+        <div class="error-box">
+            POO, JUST KIDDING
+        </div>
+
+        <!-- IMPORTANT:
+             Goes to forgiveness BEFORE final ending -->
+        <a href="#forgiveness" class="button">
+            CONTINUE
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         FORGIVENESS REQUEST
+    ================================== -->
+
+    <section id="forgiveness" class="screen forgiveness">
+
+        <div class="tiny">
+            PLAYER 1 WANTS TO APOLOGIZE
+        </div>
+
+        <h2>
+            PLAYER 1 IS<br>
+            ASKING FOR<br>
+            FORGIVENESS.
+        </h2>
+
+        <p class="message">
+            FOR HIS EXTREME<br>
+            UNAVAILABILITY.
+            <br><br>
+            THE SYSTEM CONFIRMS<br>
+            THIS WAS A TERRIBLE PERFORMANCE.
+        </p>
+
+        <div class="error-box">
+
+            AVAILABILITY: QUESTIONABLE<br>
+            DISAPPEARING: UNACCEPTABLE<br>
+
+        </div>
+
+        <p class="message">
+            WILL PLAYER 2<br>
+            FORGIVE PLAYER 1?
+        </p>
+
+        <div class="choices">
+
+            <a href="#forgive-yes" class="yes">
+                YES
+            </a>
+
+            <a href="#forgive-no" class="no">
+                NO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         FORGIVENESS YES #1
+    ================================== -->
+
+    <section id="forgive-yes" class="screen fake-error">
+
+        <div class="error-code">
+            ERROR 403
+        </div>
+
+        <h2>
+            FORGIVENESS<br>
+            REQUEST ACCEPTED?
+        </h2>
+
+        <p class="message">
+            WAIT...
+            <br><br>
+            THE SYSTEM IS CHECKING<br>
+            PLAYER 2'S MIND.
+        </p>
+
+        <div class="error-box">
+            SYSTEM GLITCH ERROR 
+        </div>
+
+        <a href="#forgive-yes2" class="button">
+            CHECK AGAIN
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         FORGIVENESS YES #2
+    ================================== -->
+
+    <section id="forgive-yes2" class="screen fake-error">
+
+        <div class="error-code">
+            ERROR 418
+        </div>
+
+        <h2>
+            WAIT...
+        </h2>
+
+        <p class="message">
+            PLAYER 1 IS GETTING<br>
+            TOO EMOTIONAL.
+        </p>
+
+        <div class="error-box">
+            ACCEPTING APOLOGY...
+        </div>
+
+        <a href="#forgiveness-final" class="button">
+            CONTINUE
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         FORGIVENESS NO
+    ================================== -->
+
+    <section id="forgive-no" class="screen no-screen">
+
+        <div class="tiny">
+            FORGIVENESS RESPONSE RECEIVED
+        </div>
+
+        <h2>
+            NO?
+        </h2>
+
+        <p class="message">
+            FAIR ENOUGH.
+            <br><br>
+            PLAYER 1 HAS BEEN<br>
+            SENT TO PRISON.
+        </p>
+
+        <div class="damage">
+            -999 EMOTIONAL DAMAGE
+        </div>
+
+        <a href="#forgiveness-final" class="button">
+            I'LL FORGIVE
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         FORGIVENESS FINAL
+    ================================== -->
+
+    <section id="forgiveness-final" class="screen fixed">
+
+        <div class="success">
+            APOLOGY PROCESSED
+        </div>
+
+        <h2>
+            PLAYER 1<br>
+            UNDERSTANDS.
+        </h2>
+
+        <p class="message">
+            GLAD TO PLAY AGAIN.
+            <br><br>
+            WIN OR LOSE.
+            <br><br>
+            PLAYER 1 WILL TRY<br>
+            TO DO BETTER.
+        </p>
+
+        <a href="#real-yes" class="button">
+            CONTINUE TO LOBBY
+        </a>
+
+    </section>
+
+
+    <!-- =================================
+         REAL FINAL ENDING
+    ================================== -->
+
+    <section id="real-yes" class="screen yes-screen">
+
+        <div class="success">
+            CONNECTION RESTORED
+        </div>
+
+        <h1>
+            PLAYER 2<br>
+            ACCEPTED.
+        </h1>
+
+        <div class="final-terminal">
+
+            <p>PLAYER 1 ........ READY</p>
+            <p>PLAYER 2 ........ READY</p>
+            <p>LOBBY ........... OPEN</p>
+            <p>EXCUSES ......... NONE</p>
+
+        </div>
+
+        <div class="final-message">
+            MESSAGE FROM<br>
+            PLAYER 1
+        </div>
+
+        <div class="war-message">
+            MESSAGE ME<br>
+            WHEN YOU'RE READY<br>
+            TO WAR AGAIN.
+        </div>
+
+        <div class="small">
+            — PLAYER 1
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
